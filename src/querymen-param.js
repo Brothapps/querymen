@@ -64,9 +64,9 @@ export default class QuerymenParam extends Param {
       path = paths[0]
     }
 
-    if (_.isArray(value)) {
-      operator = operator === '$ne' ? '$nin' : '$in'
-    }
+    // if (_.isArray(value)) {
+    //   operator = operator === '$ne' ? '$nin' : '$in'
+    // }
 
     _.forIn(this.options, (optionValue, option) => {
       let parser
